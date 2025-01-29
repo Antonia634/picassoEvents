@@ -1,0 +1,20 @@
+#frontPageHero {
+    background-image: url(../images/picassoPhoto.webp);
+    background-position: right top;
+    background-size: cover;
+}
+
+.btn-primary {
+    background-color: #C83E4D;
+    border-color: #901825;
+}
+
+.btn-primary:hover {
+    background-color: #a8284e;
+    border-color: #6f1435;
+}
+
+.bg-primary, .text-bg-primary {
+    background-color: #F4B860 !important;
+    color: black !important;
+}

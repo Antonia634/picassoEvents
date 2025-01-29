@@ -1,0 +1,48 @@
+﻿<!-- Använder layout filen och arrangemang som model på denna sida -->
+@model Arrangement
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Anordna ditt arrangemang här</h1>
+<!-- Fält där användaren skriver in information om ett arrangemang och skickar sedan vidare informationen för controllern som uppdaterar databasen -->
+<form asp-action="CreateArrangement">
+    <div class="container col-12 col-lg-6">
+        <div class="row my-2">
+            <div class="col-6">
+                Namn på arrangemanget:
+            </div>
+            <div class="col">
+                <input asp-for="Name" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Datum och tid för arrangemanget:
+            </div>
+            <div class="col">
+                <input asp-for="Date" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Beskriv ditt arrangemang:
+            </div>
+            <div class="col">
+                <input asp-for="Description" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Den ansvariges användarID:
+            </div>
+            <div class="col">
+                <input asp-for="UserId" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col">
+                <input type="submit" value="Spara" />
+            </div>
+        </div>
+    </div>
+</form>

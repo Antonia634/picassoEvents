@@ -1,0 +1,26 @@
+﻿<!-- Använder layout filen på denna sida samt arrangemangklassen -->
+@model Arrangement
+@{
+    Layout = "_Layout";
+}
+<!-- Tar bort float from barn-containern -->
+<div class="clearfix" id="frontPageHero">
+    <!-- Liten container som innehåller välkomstinformation -->
+    <div class="container float-start col-7 col-md-5 m-5 p-3 bg-white bg-opacity-50 p-2 rounded-2">
+        <h1>En utav dom största Picassoskulpturerna</h1>
+        <p>Ett landmärke och en turistattraktion som förkroppsligar Picassos lekfullhet och innovation inom både måleri och skulptur! Du är välkommen att besöka "Jacqueline" i Kristinehamns trevliga skärgård både i sommarsolen och den drömmiga vintern.</p>
+        <p>Picassoskupturen finns såklart på riktigt ute i Kristinehamns skärgård men alla arrangemang och namn på denna sida är helt fiktionella.</p>
+        <!-- Kort som importerar information om nästkommande arrangemang från databasen -->
+        <div class="card mt-2">
+            <div class="card-header">
+                Kommande arrangemang
+            </div>
+            <div class="card-body">
+                <!-- Hämtar information om det arrangemang som hämtas i controllern och visar -->
+                <h5 class="card-title">@Html.DisplayFor(model => model.Name)</h5>
+                <p class="card-text">@Html.DisplayFor(model => model.Description)</p>
+                <a class="btn btn-primary" asp-action="Index" asp-controller="Arrangement">Se alla arrangemang</a>
+            </div>
+        </div>
+    </div>
+</div>

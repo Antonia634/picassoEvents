@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|c:\\users\\glob\\pictures\\skolan\\1 wpr201 webbprogrammering\\inl\u00E4mning2\\picasso\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|c:\\users\\glob\\pictures\\skolan\\1 wpr201 webbprogrammering\\inl\u00E4mning2\\picasso\\views\\user\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|solutionrelative:views\\user\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|c:\\users\\glob\\pictures\\skolan\\1 wpr201 webbprogrammering\\inl\u00E4mning2\\picasso\\controllers\\arrangementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|solutionrelative:controllers\\arrangementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|c:\\users\\glob\\pictures\\skolan\\1 wpr201 webbprogrammering\\inl\u00E4mning2\\picasso\\views\\arrangement\\editarrangement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{324FF60B-60A1-48C3-B623-98723849CCC5}|Picasso.csproj|solutionrelative:views\\arrangement\\editarrangement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T13:15:51.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeleteUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Views\\User\\DeleteUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\DeleteUser.cshtml",
+              "ToolTip": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Views\\User\\DeleteUser.cshtml",
+              "RelativeToolTip": "Views\\User\\DeleteUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T12:54:08.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditArrangement.cshtml",
+              "DocumentMoniker": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Views\\Arrangement\\EditArrangement.cshtml",
+              "RelativeDocumentMoniker": "Views\\Arrangement\\EditArrangement.cshtml",
+              "ToolTip": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Views\\Arrangement\\EditArrangement.cshtml",
+              "RelativeToolTip": "Views\\Arrangement\\EditArrangement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T12:52:47.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArrangementController.cs",
+              "DocumentMoniker": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Controllers\\ArrangementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArrangementController.cs",
+              "ToolTip": "C:\\Users\\Glob\\Pictures\\Skolan\\1 WPR201 Webbprogrammering\\Inl\u00E4mning2\\Picasso\\Controllers\\ArrangementController.cs",
+              "RelativeToolTip": "Controllers\\ArrangementController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T12:52:26.319Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

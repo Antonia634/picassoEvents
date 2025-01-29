@@ -1,0 +1,24 @@
+﻿<!-- Använder layout filen och listan av arrangemang på denna sida -->
+@model List<Arrangement>
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Kommande arrangemang vid skulpturen</h1>
+<!-- Hämtar information för alla arrangemang i databasen och lägger in detta i kort element -->
+@foreach (var arrangement in Model)
+{
+    <div class="card w-50 mx-auto my-5">
+            <div class="card-header text-bg-primary">
+                @Html.DisplayFor(model => arrangement.Name)
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-body-secondary">@Html.DisplayFor(model => arrangement.Date)</h6>
+                <p class="card-text">@Html.DisplayFor(model => arrangement.Description)</p>
+            </div>
+            <div class="card-footer">
+                <p>Ansvarig för arrangemanget: @Html.DisplayFor(model => arrangement.Users.Name)</p>
+                <a class="btn btn-primary" asp-action="EditArrangement" asp-route-id=@arrangement.Id>Ändra information</a>
+                <a class="btn btn-primary" asp-action="DeleteArrangement" asp-route-id=@arrangement.Id>Ta bort arrangemanget</a>
+            </div>
+        </div>
+}

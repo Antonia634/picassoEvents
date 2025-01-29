@@ -1,0 +1,56 @@
+﻿<!-- Använder layout filen och arrangemang som model på denna sida -->
+@model Picasso.Models.Arrangement
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Justera informationen om ditt arrangemang här</h1>
+<!-- Fält där användaren skriver in information om ett arrangemang och skickar sedan vidare informationen för controllern som uppdaterar databasen
+använder bootstrap grid
+-->
+<form asp-action="EditArrangement">
+    <div class="container col-12 col-lg-6">
+        <!-- Noterar id på arrangemanget så att denna kan tas med i funktionen i controllern när informationen sparas -->
+        <input type="hidden" asp-for"Id" />
+        <div class="row my-2">
+            <div class="col-6">
+                Namn på arrangemanget:
+            </div>
+            <div class="col">
+                <input asp-for="Name" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Datum och tid för arrangemanget:
+            </div>
+            <div class="col">
+                <input asp-for="Date" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Beskriv ditt arrangemang:
+            </div>
+            <div class="col">
+                <input asp-for="Description" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Den ansvariges användarID:
+            </div>
+            <div class="col">
+                <input asp-for="UserId" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col">
+                <input type="submit" value="Spara" />
+            </div>
+        </div>
+        <!-- Är fel användare inloggad så kommer ett felmeddelande upp här -->
+        <p>
+            @ViewBag.ErrorMessage
+        </p>
+    </div>
+</form>

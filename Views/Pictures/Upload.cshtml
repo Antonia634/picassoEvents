@@ -1,0 +1,18 @@
+﻿<!-- Använder layout filen på denna sida -->
+@{
+    Layout = "_Layout";
+}
+<h1 class ="text-center m-2">Lägg upp dina egna bilder från besök till Picassoskulpturen!</h1>
+<!-- Formulär som låter användaren ladda upp sina egna filer
+    kod från https://www.thetechplatform.com/post/upload-file-to-a-folder-in-asp-net-core-mvc
+-->
+<div class="container col-12 col-lg-6">
+    <form class="container my-4" method="post" enctype="multipart/form-data">
+        <div class="form-group my-2">
+            <label for="file">Välj fil att ladda upp:</label>
+            <!-- Accepterar bara bildformat, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
+            <input type="file" accept="image/*" name="file" id="file" class="form-control-file">
+        </div>
+        <button type="submit" class="btn btn-primary my-2">Ladda upp</button>
+    </form>
+</div>

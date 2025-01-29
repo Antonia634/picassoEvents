@@ -1,0 +1,40 @@
+﻿<!-- Sida där man kan skapa användare -->
+
+@model User
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Skapa en ny användare</h1>
+<form asp-action="CreateUser">
+    <div class="container col-12 col-lg-6">
+        <div class="row my-2">
+            <div class="col-6">
+                Användarnamn (detta måste vara unikt):
+            </div>
+            <div class="col">
+                <input asp-for="UserId" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Ditt fullständiga namn:
+            </div>
+            <div class="col">
+                <input asp-for="Name" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Välj ett starkt lösenord:
+            </div>
+            <div class="col">
+                <input type="password" asp-for="Password" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col">
+                <input type="submit" value="Spara" />
+            </div>
+        </div>
+    </div>
+</form>

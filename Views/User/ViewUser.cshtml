@@ -1,0 +1,31 @@
+﻿<!-- Använder layout filen och lista av user model på denna sida -->
+@model User
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Hantera din användare</h1>
+<div class="card w-50 mx-auto my-5">
+    <div class="card-header text-bg-primary">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+    <div class="card-body">
+        <h6 class="card-text mb-2">AnvändarID: @Html.DisplayFor(model => model.UserId)</h6>
+        <p class="card-text">Lösenord: @Html.DisplayFor(model => model.Password)</p>
+    </div>
+    <div class="card-footer">
+        <p class="card-text">Ansvarig för följande arrangemang:</p>
+        @if (Model.arrangements != null)
+        {
+            foreach (var arrangement in Model.arrangements)
+            {
+                <p class="card-text">@Html.DisplayFor(model => arrangement.Name)</p>
+            }
+        }
+        <a class="btn btn-primary" asp-action="EditUser" asp-route-id=@Model.UserId>Ändra information</a>
+        <a class="btn btn-primary" asp-action="DeleteUser" asp-route-id=@Model.UserId>Ta bort användare</a>
+    </div>
+</div>
+<!-- Loggar ut användaren -->
+<p class="text-center m-2">
+    <a type="button" class="btn btn-primary m-3" asp-action="SignOutUser">Ja, logga ut</a>
+</p>

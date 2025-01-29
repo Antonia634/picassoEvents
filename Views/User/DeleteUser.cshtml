@@ -1,0 +1,15 @@
+﻿<!-- Använder layout filen och user som model på denna sida -->
+@model Picasso.Models.User
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center">Är du säker på att du vill ta bort användaren @Html.DisplayFor(model => model.Name)?</h1>
+<!-- Tar bort användaren -->
+<div class="container w-50 d-flex justify-content-center my-5 p-0">
+    <form asp-action="DeleteUser">
+        <!-- Skicka med värdet Id så att rätt objekt kan tas bort ur databasen -->
+        <input type="hidden" asp-for"Id" />
+        <!-- Skickar  -->
+        <input class="btn btn-primary" type="submit" value="Ja, ta bort denna användare" />
+    </form>
+</div>

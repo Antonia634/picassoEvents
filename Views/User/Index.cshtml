@@ -1,0 +1,29 @@
+﻿<!-- Login sida för användare -->
+@model User
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Logga in för att få åtkomst till denna sida</h1>
+<form asp-action="index" asp-route-returnurl="@ViewData["ReturnUrl"]">
+    <div class="container col-12 col-lg-6">
+        <!-- Två fält som låter användaren skriva in användarnamn och lösenord -->
+        <div class="mb-3">
+            <label for="userLogin" class="form-label">Användare</label>
+            <div class="form-control" id="userLogin">@Html.EditorFor(model => model.UserId)</div>
+        </div>
+        <div class="mb-3">
+            <label for="userPassword" class="form-label">Lösenord</label>
+            <div class="form-control" id="userPassword">@Html.PasswordFor(model => model.Password)</div>
+        </div>
+        <!-- Skickar in informationen -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- Skriver användaren fel användarnamn/lösen så kommer ett felmeddelande upp här -->
+        <p>
+            @ViewBag.ErrorMessage
+        </p>
+    </div>
+</form>
+<div class="container col-6 col-md-3">
+    <h2>Har du ingen användare?</h2>
+    <a type="button" class="btn btn-primary" asp-action="CreateUser" asp-controller="User">Skapa en användare här</a>
+</div>

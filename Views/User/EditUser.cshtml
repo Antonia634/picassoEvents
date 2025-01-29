@@ -1,0 +1,54 @@
+﻿<!-- Använder layout filen och användare som model på denna sida -->
+@model Picasso.Models.User
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Ändra informationen om din användare här</h1>
+<!-- Fält där användaren skriver in information om ett arrangemang och skickar sedan vidare informationen för controllern som uppdaterar databasen
+använder bootstrap grid
+-->
+<form asp-action="EditUser">
+    <div class="container col-12 col-lg-6">
+        <!-- Noterar id på användaren så att denna kan tas med i funktionen i controllern när informationen sparas -->
+        <input type="hidden" asp-for"Id" />
+        <div class="row my-2">
+            <div class="col-6">
+                AnvändarId:
+            </div>
+            <div class="col">
+                <input asp-for="UserId" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Ditt fullständiga namn:
+            </div>
+            <div class="col">
+                <input asp-for="Name" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                Ditt lösenord:
+            </div>
+            <div class="col">
+                <input asp-for="Password" />
+            </div>
+        </div>
+        <div class="row my-2">
+            <p class="card-text">Ansvarig för följande arrangemang (ändra dessa via sidan för arrangemang):</p>
+            @if (Model.arrangements != null)
+            {
+                foreach (var arrangement in Model.arrangements)
+                {
+                    <p class="card-text">@Html.DisplayFor(model => arrangement.Name)</p>
+                }
+            }
+        </div>
+        <div class="row my-2">
+            <div class="col">
+                <input type="submit" value="Spara" />
+            </div>
+        </div>
+    </div>
+</form>

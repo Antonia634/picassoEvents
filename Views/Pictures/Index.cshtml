@@ -1,0 +1,22 @@
+﻿<!-- Använder layout filen på denna sida -->
+@using Picasso.Models
+@model List<FileModel>
+@{
+    Layout = "_Layout";
+}
+<h1 class="text-center m-2">Här visas bilder som har tagits på Picassoskulpturen eller i närområdet!</h1>
+<!-- Visar varje bild i mappen för uppladningar -->
+<div class="container mx-auto m-2 d-flex flex-wrap justify-content-evenly">
+    @foreach (FileModel file in Model)
+    {
+        <div class="container col-5 m-2">
+            <img src="uploads/@file.FileName" width="100%">
+            @Html.ActionLink("Ladda ner bild", "DownloadFile", new { fileName = file.FileName })
+        </div>
+        
+    }
+</div>
+<!-- Länk till att ladda upp sina egna bilder -->
+<p>
+    <a type="button" class="btn btn-primary m-3" asp-action="Upload">Ladda upp dina egna bilder här!</a>
+</p>
